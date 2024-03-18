@@ -16,9 +16,9 @@ export async function activate(context: vscode.ExtensionContext) {
         if (editor) {
             // Get the text from the active editor
             const text = editor.document.getText();
-            vscode.commands.executeCommand('simpleBrowser.show', vscode.Uri.parse('http://localhost:5173'));
+            vscode.commands.executeCommand('simpleBrowser.show', vscode.Uri.parse('http://194.164.52.228:5173'));
         } else {
-            vscode.commands.executeCommand('simpleBrowser.show', vscode.Uri.parse('http://localhost:5173'));
+            vscode.commands.executeCommand('simpleBrowser.show', vscode.Uri.parse('http://194.164.52.228:5173'));
         }
     });
 
